@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section id="hero" class="hero without-bg">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <blockquote data-aos="fade-up" data-aos-delay="100">
+                        {{title|safe}}
+                    </blockquote>
+                    <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <a href="/" class="btn-get-started"><i class="bi bi-chevron-left"></i>Вернуться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        {{description|safe}}
+    </div>
+</section>
+
+{% endblock %}
